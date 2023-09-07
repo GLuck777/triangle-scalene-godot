@@ -1,8 +1,8 @@
 [gd_scene load_steps=6 format=3 uid="uid://d1lb4ilbpyjk5"]
 
-[ext_resource type="Texture2D" uid="uid://b8ye3vcj01pwj" path="res://terrainproto.svg" id="1_mtrdg"]
-[ext_resource type="Script" path="res://terrainproto.gd" id="1_snqvq"]
-[ext_resource type="Texture2D" uid="uid://dsjx3wc5nd44w" path="res://Cartesproto.svg" id="2_awra2"]
+[ext_resource type="Script" path="res://src/scripts/terrainproto.gd" id="1_dyd57"]
+[ext_resource type="Texture2D" uid="uid://bykjtamukna3y" path="res://Cartesproto.svg" id="2_awra2"]
+[ext_resource type="Texture2D" uid="uid://c57ek23y55jaf" path="res://src/sprite/terrainproto.svg" id="2_axxv6"]
 
 [sub_resource type="Theme" id="Theme_v1csp"]
 
@@ -14,14 +14,14 @@ corner_detail = 1
 [node name="Terrainproto" type="Node2D"]
 position = Vector2(590, 327)
 scale = Vector2(0.143239, 0.130001)
-script = ExtResource("1_snqvq")
+script = ExtResource("1_dyd57")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(-90.7573, 169.229)
 zoom = Vector2(0.6, 0.6)
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("1_mtrdg")
+texture = ExtResource("2_axxv6")
 
 [node name="Control" type="Control" parent="."]
 layout_mode = 3
@@ -32,6 +32,7 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="Container" type="Container" parent="Control"]
+layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
 
@@ -76,6 +77,7 @@ position = Vector2(-1907.53, 3155.56)
 texture = ExtResource("2_awra2")
 
 [node name="Container2" type="Container" parent="Control"]
+layout_mode = 0
 offset_left = 10.3203
 offset_top = 333.355
 offset_right = 50.3203

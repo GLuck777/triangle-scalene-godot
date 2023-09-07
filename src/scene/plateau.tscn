@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://bj1t1op8cj2sg"]
+
+[ext_resource type="Texture2D" uid="uid://d1xyfpusk8bvq" path="res://src/sprite/terrain_Nu.png" id="1_2t6cr"]
+[ext_resource type="Script" path="res://src/scripts/plateau.cs" id="1_7q3c3"]
+
+[node name="Plateau" type="Node2D"]
+script = ExtResource("1_7q3c3")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_2t6cr")
+
+[node name="cam2D" type="Camera2D" parent="."]
+
+[node name="Marker2DPlayer1" type="Marker2D" parent="."]
+
+[node name="Marker2DPlayer2" type="Marker2D" parent="."]
+
+[node name="Marker2DConfrontation" type="Marker2D" parent="."]
