@@ -1,0 +1,147 @@
+[gd_scene load_steps=6 format=3 uid="uid://d1lb4ilbpyjk5"]
+
+[ext_resource type="Texture2D" uid="uid://b8ye3vcj01pwj" path="res://terrainproto.svg" id="1_mtrdg"]
+[ext_resource type="Script" path="res://terrainproto.gd" id="1_snqvq"]
+[ext_resource type="Texture2D" uid="uid://dsjx3wc5nd44w" path="res://Cartesproto.svg" id="2_awra2"]
+
+[sub_resource type="Theme" id="Theme_v1csp"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bxg57"]
+bg_color = Color(0.282353, 0.576471, 0.231373, 1)
+border_color = Color(0.8, 0.8, 0.8, 0)
+corner_detail = 1
+
+[node name="Terrainproto" type="Node2D"]
+position = Vector2(590, 327)
+scale = Vector2(0.143239, 0.130001)
+script = ExtResource("1_snqvq")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(-90.7573, 169.229)
+zoom = Vector2(0.6, 0.6)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_mtrdg")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Container" type="Container" parent="Control"]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Cartesproto6" type="Sprite2D" parent="Control/Container"]
+position = Vector2(1941.23, 3150.39)
+texture = ExtResource("2_awra2")
+
+[node name="Cartesproto7" type="Sprite2D" parent="Control/Container"]
+position = Vector2(1508.5, 3150.39)
+texture = ExtResource("2_awra2")
+
+[node name="Cartesproto8" type="Sprite2D" parent="Control/Container"]
+position = Vector2(1075.77, 3150.39)
+texture = ExtResource("2_awra2")
+
+[node name="Cartesproto9" type="Sprite2D" parent="Control/Container"]
+position = Vector2(643.046, 3150.39)
+texture = ExtResource("2_awra2")
+
+[node name="Cartesproto10" type="Sprite2D" parent="Control/Container"]
+position = Vector2(220.384, 3150.39)
+texture = ExtResource("2_awra2")
+
+[node name="Cartesproto5" type="Sprite2D" parent="Control/Container"]
+position = Vector2(-186.681, 3155.56)
+texture = ExtResource("2_awra2")
+
+[node name="Cartesproto4" type="Sprite2D" parent="Control/Container"]
+position = Vector2(-619.411, 3155.56)
+texture = ExtResource("2_awra2")
+
+[node name="Cartesproto3" type="Sprite2D" parent="Control/Container"]
+position = Vector2(-1052.14, 3155.56)
+texture = ExtResource("2_awra2")
+
+[node name="Cartesproto2" type="Sprite2D" parent="Control/Container"]
+position = Vector2(-1484.87, 3155.56)
+texture = ExtResource("2_awra2")
+
+[node name="Cartesproto" type="Sprite2D" parent="Control/Container"]
+position = Vector2(-1907.53, 3155.56)
+texture = ExtResource("2_awra2")
+
+[node name="Container2" type="Container" parent="Control"]
+offset_left = 10.3203
+offset_top = 333.355
+offset_right = 50.3203
+offset_bottom = 373.355
+rotation = -3.13392
+
+[node name="Cartesproto6" type="Sprite2D" parent="Control/Container2"]
+position = Vector2(1941.23, 3150.39)
+texture = ExtResource("2_awra2")
+
+[node name="Cartesproto7" type="Sprite2D" parent="Control/Container2"]
+position = Vector2(1508.5, 3150.39)
+texture = ExtResource("2_awra2")
+
+[node name="Cartesproto8" type="Sprite2D" parent="Control/Container2"]
+position = Vector2(1075.77, 3150.39)
+texture = ExtResource("2_awra2")
+
+[node name="Cartesproto9" type="Sprite2D" parent="Control/Container2"]
+position = Vector2(643.046, 3150.39)
+texture = ExtResource("2_awra2")
+
+[node name="Cartesproto10" type="Sprite2D" parent="Control/Container2"]
+position = Vector2(220.384, 3150.39)
+texture = ExtResource("2_awra2")
+
+[node name="Cartesproto5" type="Sprite2D" parent="Control/Container2"]
+position = Vector2(-186.681, 3155.56)
+texture = ExtResource("2_awra2")
+
+[node name="Cartesproto4" type="Sprite2D" parent="Control/Container2"]
+position = Vector2(-619.411, 3155.56)
+texture = ExtResource("2_awra2")
+
+[node name="Cartesproto3" type="Sprite2D" parent="Control/Container2"]
+position = Vector2(-1052.14, 3155.56)
+texture = ExtResource("2_awra2")
+
+[node name="Cartesproto2" type="Sprite2D" parent="Control/Container2"]
+position = Vector2(-1484.87, 3155.56)
+texture = ExtResource("2_awra2")
+
+[node name="Cartesproto" type="Sprite2D" parent="Control/Container2"]
+position = Vector2(-1907.53, 3155.56)
+texture = ExtResource("2_awra2")
+
+[node name="Panel" type="Panel" parent="Control"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -2150.25
+offset_top = 3653.82
+offset_right = -1163.25
+offset_bottom = 4171.82
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(4.35104, 0.692308)
+theme = SubResource("Theme_v1csp")
+theme_override_styles/panel = SubResource("StyleBoxFlat_bxg57")
+
+[node name="Marker2DPlayer1" type="Marker2D" parent="."]
+position = Vector2(-27.9253, -2853.82)
+
+[node name="Marker2DPlayer2" type="Marker2D" parent="."]
+position = Vector2(-41.8879, 3161.51)
+
+[node name="Marker2DPlayerConfrontation" type="Marker2D" parent="."]
+position = Vector2(-13.9624, 215.383)
