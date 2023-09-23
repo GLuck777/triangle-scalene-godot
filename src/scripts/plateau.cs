@@ -42,7 +42,7 @@ public partial class plateau : Node2D
 			Cette méthode est appelée pour les déplacements de caméra
 		*/
 		if (this.camObject.GlobalPosition.Y > this.go_to.Y){
-			this.CamSpeed = Mathf.;
+			//this.CamSpeed = Mathf.;
 		} else if (this.camObject.GlobalPosition.Y < this.go_to.Y) {
 			
 		}
